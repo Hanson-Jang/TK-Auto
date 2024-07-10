@@ -60,12 +60,21 @@
                 <p>전화: [전화번호]</p>
                 <p>이메일: [이메일 주소]</p>
             </div>
-            <form id="contact-form" action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
+            
+<form id="contact-form" action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
+    <!-- Honeypot -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+    
     <input type="text" name="name" placeholder="이름" required>
     <input type="email" name="email" placeholder="이메일" required>
     <textarea name="message" placeholder="메시지" required></textarea>
     <button type="submit">보내기</button>
-            </form>
+</form>
         </section>
     </main>
 
