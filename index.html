@@ -57,7 +57,7 @@
                 <p>전화: [전화번호]</p>
                 <p>이메일: jerhyun@gmail.com</p>
             </div>
-            <form action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
+            <form id="contact-form" action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
                 <input type="hidden" name="_next" value="https://hanson-jang.github.io/TK-Auto/thanks.html">
                 <input type="hidden" name="_subject" value="TK-Auto 새로운 문의">
                 <input type="hidden" name="_captcha" value="false">
@@ -72,5 +72,30 @@
     <footer>
         <p>&copy; 2024 TK-Auto. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // 폼 제출 기본 동작 방지
+            var form = event.target;
+            var data = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    window.location.href = 'https://hanson-jang.github.io/TK-Auto/thanks.html'; // 리디렉션
+                } else {
+                    alert('메시지 전송에 실패했습니다. 다시 시도해주세요.');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                alert('메시지 전송에 실패했습니다. 다시 시도해주세요.');
+            });
+        });
+    </script>
 </body>
 </html>
