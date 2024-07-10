@@ -57,12 +57,14 @@
                 <p>전화: [전화번호]</p>
                 <p>이메일: jerhyun@gmail.com</p>
             </div>
-            <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" name="name" placeholder="이름" required>
-        <input type="email" name="email" placeholder="이메일" required>
-        <textarea name="message" placeholder="메시지" required></textarea>
-        <button type="submit">보내기</button>
+            <form action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://your-github-username.github.io/your-repo-name/thanks.html">
+                <input type="hidden" name="_subject" value="TK-Auto 새로운 문의">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="이름" required>
+                <input type="email" name="email" placeholder="이메일" required>
+                <textarea name="message" placeholder="메시지" required></textarea>
+                <button type="submit">보내기</button>
             </form>
         </section>
     </main>
