@@ -1,195 +1,256 @@
-* {
+body {
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 header {
-    background-color: #f8f8f8;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #333;
+    color: white;
+    padding: 1rem;
 }
 
-.logo {
+header .logo {
     display: flex;
     align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo span {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.logo img {
-    width: 50px;
-    margin-right: 10px;
+header .logo p {
+    font-size: 1rem;
+    margin: 0;
 }
 
-.logo span {
-    color: #333;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
-.logo p {
-    font-size: 0.8rem;
-    color: #666;
-    margin-left: 10px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem 1rem;
 }
 
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 4rem 0;
-    background-color: #f0f0f0;
+    align-items: center;
+    padding: 4rem 1rem;
+    background: url('path-to-hero-bg.jpg') no-repeat center center/cover;
+    color: white;
 }
 
 .hero-content {
-    flex: 1;
-    padding-right: 2rem;
+    max-width: 50%;
 }
 
-.hero-image {
-    flex: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-h1 {
+.hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #333;
+    margin: 1rem 0;
 }
 
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #555;
+.hero h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
 }
 
-.cta-buttons {
-    margin-top: 2rem;
+.hero p {
+    margin: 0.5rem 0;
 }
 
 .cta-buttons button {
     display: block;
-    width: 100%;
-    padding: 0.8rem 1.5rem;
-    margin-bottom: 1rem;
-    background-color: #4a90e2;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: #f00;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.cta-buttons button:hover {
-    background-color: #357abd;
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
 }
 
-#services, #booking, #contact {
-    padding: 4rem 0;
+#values {
+    background: #f8f8f8;
+    padding: 2rem 1rem;
+}
+
+#values h2 {
+    text-align: center;
+}
+
+#values ul {
+    list-style: none;
+    padding: 0;
+}
+
+#values ul li {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+#services {
+    padding: 2rem 1rem;
+}
+
+#services h2, #pricing h2, #faq h2, #contact h2 {
+    text-align: center;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+    padding: 1rem;
 }
 
 .service-item {
-    background-color: #f8f8f8;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
 }
 
-form {
-    display: grid;
-    gap: 1rem;
-}
-
-input, textarea, button[type="submit"] {
+.service-item img {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
+    height: auto;
     border-radius: 5px;
 }
 
-button[type="submit"] {
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
 }
 
-button[type="submit"]:hover {
-    background-color: #357abd;
+.pricing-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pricing-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#faq ol {
+    padding-left: 1rem;
+}
+
+#faq li {
+    margin-bottom: 1rem;
+}
+
+#faq h3 {
+    margin-bottom: 0.5rem;
+}
+
+#contact {
+    background: #f8f8f8;
+    padding: 2rem 1rem;
+}
+
+#contact table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+#contact table th, #contact table td {
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #555;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .overlay {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
 }
 
 .overlay.active {
-    display: flex;
+    display: block;
 }
 
 .spinner {
-    width: 50px;
-    height: 50px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
+    display: none;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay.active .spinner {
+    display: block;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero-content, .hero-image {
-        width: 100%;
-        padding: 0;
-    }
-
-    .hero-image {
-        margin-top: 2rem;
-    }
 }
