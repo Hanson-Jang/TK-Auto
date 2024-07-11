@@ -10,20 +10,29 @@
 <body>
     <header>
         <nav>
-            <div class="logo">TK-Auto</div>
-            <ul>
-                <li><a href="#home">홈</a></li>
-                <li><a href="#services">서비스</a></li>
-                <li><a href="#booking">예약</a></li>
-                <li><a href="#contact">연락처</a></li>
-            </ul>
+            <div class="logo">
+                <img src="path-to-tk-auto-logo.png" alt="TK-AUTO Logo">
+                <span>TK-AUTO</span>
+                <p>Best Maintenance Service</p>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h1>TK-Auto 프랑크푸르트 한인 정비소</h1>
-            <p>프랑크푸르트에서 최고의 한국어 자동차 정비 서비스를 제공합니다.</p>
+            <div class="hero-content">
+                <h1>Welcome to TK-Auto</h1>
+                <h2>Discover the Best Korean Auto Repair Shop for You</h2>
+                <p>저희는 프랑크푸르트에 위치한 차량 수리 및 유지 보수를 위한 전문적이고 신뢰할 수 있는 한인 정비 사업소입니다. 숙련된 한국인 마이스터와 기술자들이 어떤 문제라도 빠르고 효과적으로 해결합니다.</p>
+                <div class="cta-buttons">
+                    <button>차량에 문제가 생기셨나요? 여서 오세요! 저희가 도와드릴게요</button>
+                    <button>소통이 불편하신가요? 걱정 마세요! 한국어로 말씀 주세요</button>
+                    <button>수리 비용이 몇 미더우신가요? 저희는 언제나 투명합니다</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="path-to-hero-image.jpg" alt="Auto Repair Shop">
+            </div>
         </section>
 
         <section id="services">
@@ -40,34 +49,6 @@
                 <div class="service-item">
                     <h3>타이어 교체</h3>
                     <p>최적의 타이어 추천 및 교체 서비스</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="our-services">
-            <h2>우리의 서비스</h2>
-            <p>We make our customers' lives more convenient and happier based on trust</p>
-            <p>우리는 신뢰를 기반으로, 고객의 삶을 보다 편리하고 더 행복하게 만듭니다</p>
-            <div class="service-details">
-                <div class="service-detail">
-                    <img src="path-to-repair-image.jpg" alt="수리 이미지">
-                    <h3>수리</h3>
-                    <p>우리는 최신 수리 방법과 기술을 활용하여 귀하의 차량에 발생하는 모든 문제를 진단하고 해결할 수 있습니다.</p>
-                </div>
-                <div class="service-detail">
-                    <img src="path-to-maintenance-image.jpg" alt="정비 이미지">
-                    <h3>정비</h3>
-                    <p>차량이 항상 최상의 상태를 유지하도록 다양한 정비 서비스를 제공합니다.</p>
-                </div>
-                <div class="service-detail">
-                    <img src="path-to-tuning-image.jpg" alt="튜닝 이미지">
-                    <h3>튜닝</h3>
-                    <p>튜닝 서비스를 통해 차량의 성능과 외관을 최적화할 수 있습니다.</p>
-                </div>
-                <div class="service-detail">
-                    <img src="path-to-tire-image.jpg" alt="타이어 이미지">
-                    <h3>타이어</h3>
-                    <p>타이어 교체 및 수리 서비스를 제공합니다.</p>
                 </div>
             </div>
         </section>
@@ -103,7 +84,34 @@
     </div>
 
     <script>
-        // 기존 스크립트 코드 유지
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('loading-overlay').classList.add('active');
+            var form = event.target;
+            var data = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: data
+            }).then(response => {
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    return response.text().then(text => { throw new Error(text); });
+                }
+            }).then(text => {
+                document.getElementById('loading-overlay').classList.remove('active');
+                if (text.trim() === "Success") {
+                    window.location.href = 'https://boisterous-torte-59f371.netlify.app/thanks.html';
+                } else {
+                    throw new Error(text);
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+                document.getElementById('loading-overlay').classList.remove('active');
+                alert('메시지 전송에 실패했습니다. 다시 시도해주세요.');
+            });
+        });
     </script>
 </body>
 </html>
