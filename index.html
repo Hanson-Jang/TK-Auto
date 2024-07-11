@@ -94,7 +94,7 @@
                 <p>이메일: jerhyun@gmail.com</p>
             </div>
             <form id="contact-form" action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://<username>.github.io/TK-Auto/thanks.html">
+                <input type="hidden" name="_next" value="https://boisterous-torte-59f371.netlify.app/thanks.html"> <!-- Netlify Pages URL로 변경 -->
                 <input type="hidden" name="_subject" value="TK-Auto 새로운 문의">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="text" name="name" placeholder="이름" required>
@@ -130,14 +130,15 @@
                     'Accept': 'application/json'
                 }
             }).then(response => {
+                if (response.ok) {
+                    return response.json(); // JSON 응답 처리
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            }).then(data => {
                 // 로딩 오버레이 숨기기
                 document.getElementById('loading-overlay').classList.remove('active');
-
-                if (response.ok) {
-                    window.location.href = 'https://<username>.github.io/TK-Auto/thanks.html'; // GitHub Pages URL로 변경
-                } else {
-                    alert('메시지 전송에 실패했습니다. 다시 시도해주세요.');
-                }
+                window.location.href = 'https://boisterous-torte-59f371.netlify.app/thanks.html'; // Netlify Pages URL로 변경
             }).catch(error => {
                 // 로딩 오버레이 숨기기
                 document.getElementById('loading-overlay').classList.remove('active');
