@@ -93,10 +93,7 @@
                 <p>전화: [전화번호]</p>
                 <p>이메일: jerhyun@gmail.com</p>
             </div>
-            <form id="contact-form" action="https://formsubmit.co/jerhyun@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://boisterous-torte-59f371.netlify.app/thanks.html"> <!-- Netlify Pages URL로 변경 -->
-                <input type="hidden" name="_subject" value="TK-Auto 새로운 문의">
-                <input type="hidden" name="_captcha" value="false">
+            <form id="contact-form" action="YOUR_WEB_APP_URL" method="POST"> <!-- YOUR_WEB_APP_URL를 Google Apps Script Web App URL로 변경 -->
                 <input type="text" name="name" placeholder="이름" required>
                 <input type="email" name="email" placeholder="이메일" required>
                 <textarea name="message" placeholder="메시지" required></textarea>
@@ -132,15 +129,12 @@
             }).then(response => {
                 console.log(response); // 응답 확인
                 if (response.ok) {
-                    return response.json(); // JSON 응답 처리
+                    // 로딩 오버레이 숨기기
+                    document.getElementById('loading-overlay').classList.remove('active');
+                    window.location.href = 'https://boisterous-torte-59f371.netlify.app/thanks.html'; // Netlify Pages URL로 변경
                 } else {
                     return response.text().then(text => { throw new Error(text); });
                 }
-            }).then(data => {
-                console.log('Success:', data); // 성공 응답 확인
-                // 로딩 오버레이 숨기기
-                document.getElementById('loading-overlay').classList.remove('active');
-                window.location.href = 'https://boisterous-torte-59f371.netlify.app/thanks.html'; // Netlify Pages URL로 변경
             }).catch(error => {
                 console.error('Error:', error); // 오류 메시지 출력
                 // 로딩 오버레이 숨기기
