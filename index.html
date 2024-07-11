@@ -93,7 +93,7 @@
                 <p>전화: [전화번호]</p>
                 <p>이메일: jerhyun@gmail.com</p>
             </div>
-            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbwLiIhq_Ige9SxopSuHMa3Sq24cqiVqECli7tXKnoqb1U_yiuiCFsXeGbt3-ePjdqH_NA/exec" method="POST"> <!-- YOUR_WEB_APP_URL를 Google Apps Script Web App URL로 변경 -->
+            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbwLiIhq_Ige9SxopSuHMa3Sq24cqiVqECli7tXKnoqb1U_yiuiCFsXeGbt3-ePjdqH_NA/exec" method="POST"> <!-- YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL를 Google Apps Script Web App URL로 변경 -->
                 <input type="text" name="name" placeholder="이름" required>
                 <input type="email" name="email" placeholder="이메일" required>
                 <textarea name="message" placeholder="메시지" required></textarea>
@@ -122,12 +122,8 @@
 
             fetch(form.action, {
                 method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
+                body: data
             }).then(response => {
-                console.log(response); // 응답 확인
                 if (response.ok) {
                     // 로딩 오버레이 숨기기
                     document.getElementById('loading-overlay').classList.remove('active');
