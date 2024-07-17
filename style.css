@@ -75,6 +75,11 @@ main {
     max-width: 600px;
 }
 
+.hero .logo {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
 .hero h1 {
     font-size: 2.5rem;
     margin: 1rem 0;
@@ -87,6 +92,10 @@ main {
 
 .hero p {
     margin: 0.5rem 0;
+}
+
+.hero p.highlight {
+    color: #f00;
 }
 
 .cta-buttons button {
@@ -124,6 +133,7 @@ main {
 
 #values ul li {
     padding: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 #services {
