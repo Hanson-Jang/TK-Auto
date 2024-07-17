@@ -75,8 +75,8 @@ main {
     max-width: 600px;
 }
 
-.hero .logo {
-    width: 150px;
+.hero .logo-main {
+    width: 200px;
     margin-bottom: 1rem;
 }
 
@@ -96,6 +96,10 @@ main {
 
 .hero p.highlight {
     color: #f00;
+}
+
+.hero .blue-text {
+    color: #007bff;
 }
 
 .cta-buttons button {
