@@ -213,9 +213,38 @@ main {
 
 #contact {
     background: #f8f9fa;
+    text-align: center; /* 전체 섹션을 중앙 정렬 */
 }
 
-#contact-form input, #contact-form textarea {
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info table {
+    border-collapse: separate;
+    border-spacing: 0 10px; /* 행 간격 추가 */
+}
+
+.contact-info th {
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.contact-info td {
+    text-align: left;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* 폼을 중앙에 배치 */
+}
+
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
