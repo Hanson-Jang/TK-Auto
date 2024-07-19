@@ -150,11 +150,7 @@ main {
 }
 
 #values, #services, #pricing, #faq, #contact {
-    padding: 4rem 0;
-}
-
-#values {
-    background: #f8f9fa;
+    padding: 4rem 1rem; /* 좌우 패딩 추가 */
 }
 
 #values h2, #services h2, #pricing h2, #faq h2, #contact h2 {
@@ -210,6 +206,13 @@ main {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
+}
+
+#services p, #pricing p {
+    max-width: 800px; /* 최대 너비 설정 */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem; /* 추가 좌우 패딩 */
 }
 
 #contact {
@@ -379,6 +382,14 @@ footer {
 
     .hero-images .main-image {
         width: 100%;
+    }
+
+    #services, #pricing {
+        padding: 3rem 1rem; /* 모바일에서 상하 패딩 줄이고 좌우 패딩 유지 */
+    }
+
+    #services p, #pricing p {
+        padding: 0 0.5rem; /* 모바일에서 좌우 패딩 줄임 */
     }
 }
 
