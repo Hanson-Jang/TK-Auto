@@ -4,7 +4,7 @@ body {
     padding: 60px 0 0; /* 헤더 높이에 맞춰 조정 */
     box-sizing: border-box;
     line-height: 1.6;
-    color: #F8F1DC;
+    color: #333;
 }
 
 header {
@@ -216,7 +216,7 @@ main {
 }
 
 #contact {
-    background: #f8f9fa;
+    background: #F8F1DC;
     text-align: center;
 }
 
