@@ -194,7 +194,7 @@
             var jsonObject = {};
             formData.forEach((value, key) => { jsonObject[key] = value });
         
-            fetch("https://script.google.com/macros/s/AKfycbxbfJZQ4eCLBdHKFvj9dy0KGM55fAKIbv9OM1UmPTUWc84W1C_lPZbhE2tVTyanBNVrgQ/exec", {
+            fetch("https://script.google.com/macros/s/AKfycbwuPRsCj8ZYwyuVd4uS9SjmwQYkS2Lo2r1JBKpC55ObKs9kl31kmYOSY8RBPexMG0_CIg/exec", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" }, 
                 body: JSON.stringify(jsonObject) 
