@@ -166,7 +166,7 @@
                     </tr>
                 </table>
             </div>
-            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbzhuVr4RqX-y1khkLYaq2sF0_MlZQJ9vhDO9l15YF3vSUiIVLc7Sgl2Lg0eFdQglksj6g/exec" method="POST">
+            <form id="contact-form" action="https://script.google.com/macros/s/AKfycbyX3387JNe1Ng79LcJvBRr8N5KRU5OGdRtcV5ZOexjzKfIxKv4gVT6miTjAv29RzI_f/exec" method="POST">
                 <input type="text" name="name" placeholder="이름" required>
                 <input type="email" name="email" placeholder="이메일" required>
                 <textarea name="message" placeholder="메시지" required></textarea>
@@ -191,17 +191,18 @@
             document.getElementById('loading-overlay').classList.add('active');
         
             var formData = new FormData(event.target);
+            var urlEncodedData = new URLSearchParams();
         
-            fetch("https://script.google.com/macros/s/AKfycbzhuVr4RqX-y1khkLYaq2sF0_MlZQJ9vhDO9l15YF3vSUiIVLc7Sgl2Lg0eFdQglksj6g/exec", {
+            formData.forEach((value, key) => {
+                urlEncodedData.append(key, value);
+            });
+        
+            fetch("https://script.google.com/macros/s/AKfycbyX3387JNe1Ng79LcJvBRr8N5KRU5OGdRtcV5ZOexjzKfIxKv4gVT6miTjAv29RzI_f/exec", {
                 method: "POST",
-                body: formData // 데이터를 FormData 형식으로 전송
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: urlEncodedData.toString()
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP 오류! 상태 코드: ${response.status}`);
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(data => {
                 console.log("응답 데이터:", data);
                 document.getElementById('loading-overlay').classList.remove('active');
@@ -218,6 +219,7 @@
                 window.location.href = `thanks.html?status=error&error=${encodeURIComponent(error.message)}`;
             });
         });
+
 
 
 
