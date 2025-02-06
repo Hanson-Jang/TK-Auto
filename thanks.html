@@ -1,16 +1,66 @@
-<p id="message-status">귀하의 메시지가 성공적으로 전송되었습니다.</p>
-<p id="error-message" class="error-message" style="display: none;"></p>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const params = new URLSearchParams(window.location.search);
-        const status = params.get("status");
-        const errorMessage = params.get("error");
-
-        if (status === "error") {
-            document.getElementById("message-status").textContent = "메시지 전송 중 문제가 발생했습니다.";
-            document.getElementById("error-message").textContent = "오류 내용: " + decodeURIComponent(errorMessage);
-            document.getElementById("error-message").style.display = "block";
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감사합니다 - TK-Auto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thank-you-container {
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-    });
-</script>
+
+        .thank-you-container h1 {
+            color: #7A52C7;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .thank-you-container p {
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #3D348B;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #7A52C7;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            background-color: #5E3A9C;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TK-Auto</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thank-you-container">
+            <h1>감사합니다!</h1>
+            <p>귀하의 메시지가 성공적으로 전송되었습니다. 빠른 시일 내에 연락 드리겠습니다.</p>
+            <a href="index.html" class="back-button">홈페이지로 돌아가기</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TK-Auto. All rights reserved.</p>
+    </footer>
+</body>
+</html>
