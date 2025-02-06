@@ -4,7 +4,7 @@ body {
     padding: 60px 0 0; /* 헤더 높이에 맞춰 조정 */
     box-sizing: border-box;
     line-height: 1.6;    
-    color: #3D3D3D; /* 텍스트 색상을 팜플렛 느낌과 맞춤 */
+    color: #6A5ACD; /* 텍스트 색상을 팜플렛 느낌과 맞춤 */
     background-color: #F8F1DC; /* 크림색 배경 적용 */
 }
 
@@ -40,7 +40,7 @@ nav {
 }
 
 .logo img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -60,7 +60,7 @@ nav {
 .logo-text p {
     font-size: 0.8rem;
     margin: 0.3rem 0 0;
-    color: #6A5ACD; /* 팜플렛 스타일을 반영한 포인트 컬러 */
+    color: #ecf0f1;
     font-weight: 300;
     letter-spacing: 1px;
 }
