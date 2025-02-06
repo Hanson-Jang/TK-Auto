@@ -40,7 +40,7 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
     width: auto;
 }
 
@@ -53,7 +53,7 @@ nav {
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0;
-    color: #ecf0f1;
+    color: #2c3e50;
     letter-spacing: 2px;
 }
 
@@ -95,7 +95,7 @@ main {
 .hero {
     position: relative;
     padding: 6rem 0;
-    background: #ffffff;
+    background: #f8f1DC;
     color: #333;
 }
 
