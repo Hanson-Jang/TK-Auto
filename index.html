@@ -189,31 +189,30 @@
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             document.getElementById('loading-overlay').classList.add('active');
-            var form = event.target;
-            var data = new FormData(form);
-
-            fetch(form.action, {
-                method: form.method,
-                body: data
-            }).then(response => {
-                if (response.ok) {
-                    return response.text();
-                } else {
-                    return response.text().then(text => { throw new Error(text); });
-                }
-            }).then(text => {
+        
+            var formData = new FormData(event.target);
+            var jsonObject = {};
+            formData.forEach((value, key) => { jsonObject[key] = value });
+        
+            fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" }, 
+                body: new URLSearchParams(jsonObject).toString()
+            })
+            .then(response => response.json())
+            .then(data => {
                 document.getElementById('loading-overlay').classList.remove('active');
-                if (text.trim() === "Success") {
-                    window.location.href = 'https://boisterous-torte-59f371.netlify.app/thanks.html';
+                if (data.status === "Success") {
+                    window.location.href = "thanks.html";
                 } else {
-                    throw new Error(text);
+                    window.location.href = `thanks.html?status=error&error=${encodeURIComponent(data.message)}`;
                 }
             }).catch(error => {
-                console.error('Error:', error);
                 document.getElementById('loading-overlay').classList.remove('active');
-                alert('메시지 전송에 실패했습니다. 다시 시도해주세요.');
+                window.location.href = `thanks.html?status=error&error=${encodeURIComponent(error.message)}`;
             });
         });
+
     </script>
 </body>
 </html>
