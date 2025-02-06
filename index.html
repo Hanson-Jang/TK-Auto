@@ -191,10 +191,13 @@
             document.getElementById('loading-overlay').classList.add('active');
         
             var formData = new FormData(event.target);
+            var jsonObject = {};
+            formData.forEach((value, key) => { jsonObject[key] = value });
         
-            fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+            fetch("https://script.google.com/macros/s/AKfycbxbfJZQ4eCLBdHKFvj9dy0KGM55fAKIbv9OM1UmPTUWc84W1C_lPZbhE2tVTyanBNVrgQ/exec", {
                 method: "POST",
-                body: formData
+                headers: { "Content-Type": "application/json" }, 
+                body: JSON.stringify(jsonObject) 
             })
             .then(response => {
                 if (!response.ok) {
