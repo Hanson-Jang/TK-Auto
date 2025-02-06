@@ -120,7 +120,7 @@ main {
 .hero h2 {
     font-size: 1.8rem;
     margin: 0.5rem 0;
-    color: #3498db;
+    color: #6A5ACD;
 }
 
 .hero p {
@@ -134,7 +134,7 @@ main {
 }
 
 .hero .blue-text {
-    color: #3498db;
+    color: #6A5ACD;
 }
 
 .hero-images {
@@ -170,7 +170,8 @@ main {
 }
 
 #values ul li {
-    background: white;
+    background: white; /* 배경 원래대로 (흰색) */
+    color: #333; /* 텍스트 색상 원래대로 */
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
