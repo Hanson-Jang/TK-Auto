@@ -196,22 +196,26 @@
         
             fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
                 method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" }, 
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams(jsonObject).toString()
             })
             .then(response => response.json())
             .then(data => {
+                console.log("응답 데이터:", data); // 응답 확인을 위해 콘솔 출력
                 document.getElementById('loading-overlay').classList.remove('active');
+                
                 if (data.status === "Success") {
                     window.location.href = "thanks.html";
                 } else {
                     window.location.href = `thanks.html?status=error&error=${encodeURIComponent(data.message)}`;
                 }
             }).catch(error => {
+                console.error("전송 오류:", error);
                 document.getElementById('loading-overlay').classList.remove('active');
                 window.location.href = `thanks.html?status=error&error=${encodeURIComponent(error.message)}`;
             });
         });
+
 
     </script>
 </body>
