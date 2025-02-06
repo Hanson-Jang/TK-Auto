@@ -1,14 +1,17 @@
+/* 📌 전체 배경 및 기본 색상 설정 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
-    padding: 60px 0 0; /* 헤더 높이에 맞춰 조정 */
+    padding: 60px 0 0;
     box-sizing: border-box;
     line-height: 1.6;
-    color: #333;
+    color: #3D348B;
+    background-color: #F8F3D5;
 }
 
+/* 📌 헤더 스타일 */
 header {
-    background: #2c3e50;
+    background: #7A52C7;
     color: white;
     padding: 0.5rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -32,6 +35,7 @@ nav {
     align-items: center;
 }
 
+/* 📌 로고 스타일 */
 .logo {
     display: flex;
     align-items: center;
@@ -43,27 +47,23 @@ nav {
     width: auto;
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
 .logo-text h1 {
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0;
-    color: #ecf0f1;
+    color: white;
     letter-spacing: 2px;
 }
 
 .logo-text p {
     font-size: 0.8rem;
     margin: 0.3rem 0 0;
-    color: #3498db;
+    color: #F8F3D5;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
+/* 📌 네비게이션 바 */
 .nav-links {
     list-style: none;
     display: flex;
@@ -73,7 +73,7 @@ nav {
 }
 
 .nav-links li a {
-    color: #ecf0f1;
+    color: white;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -83,19 +83,16 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #3498db;
+    color: #F8F3D5;
     transform: translateY(-2px);
 }
 
-main {
-    padding: 4rem 0;
-}
-
+/* 📌 히어로 섹션 */
 .hero {
     position: relative;
     padding: 6rem 0;
-    background: #ffffff;
-    color: #333;
+    background: white;
+    color: #3D348B;
 }
 
 .hero-content {
@@ -105,81 +102,44 @@ main {
     text-align: center;
 }
 
-.hero-text {
-    max-width: 800px;
-    margin-bottom: 2rem;
-}
-
 .hero h1 {
     font-size: 3rem;
     margin: 1rem 0;
-    color: #2c3e50;
+    color: #7A52C7;
 }
 
 .hero h2 {
     font-size: 1.8rem;
     margin: 0.5rem 0;
-    color: #3498db;
-}
-
-.hero p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
+    color: #5E3A9C;
 }
 
 .hero p.highlight {
-    color: #e74c3c;
+    color: #7A52C7;
     font-weight: bold;
 }
 
 .hero .blue-text {
-    color: #3498db;
+    color: #5E3A9C;
 }
 
-.hero-images {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* 📌 버튼 스타일 */
+button, .back-button {
+    background-color: #7A52C7;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.hero-images .main-image {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+button:hover, .back-button:hover {
+    background-color: #5E3A9C;
 }
 
-#values, #services, #pricing, #faq, #contact {
-    padding: 4rem 1rem; /* 좌우 패딩 추가 */
-}
-
-#values h2, #services h2, #pricing h2, #faq h2, #contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
-}
-
-#values ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-#values ul li {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-#values ul li:hover {
-    transform: translateY(-5px);
-}
-
+/* 📌 서비스 아이템 */
 .service-grid, .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -208,77 +168,42 @@ main {
     margin-bottom: 1rem;
 }
 
-#services p, #pricing p {
-    max-width: 800px; /* 최대 너비 설정 */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem; /* 추가 좌우 패딩 */
+/* 📌 예약 섹션 */
+#booking {
+    background-color: #EDE1FF;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* 📌 폼 스타일 */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact {
-    background: #f8f9fa;
+    background: #F8F3D5;
     text-align: center;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.contact-info table {
-    border-collapse: separate;
-    border-spacing: 0 10px;
 }
 
 .contact-info th {
     text-align: right;
     padding-right: 15px;
     font-weight: bold;
-    color: #2c3e50;
+    color: #7A52C7;
 }
 
-.contact-info td {
-    text-align: left;
-}
-
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contact-form button {
-    background: #3498db;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-}
-
-#contact-form button:hover {
-    background: #2980b9;
-}
-
+/* 📌 푸터 스타일 */
 footer {
-    background: #2c3e50;
+    background: #7A52C7;
     color: white;
     text-align: center;
     padding: 2rem 0;
 }
 
+/* 📌 로딩 오버레이 */
 .overlay {
     display: none;
     position: fixed;
@@ -286,7 +211,7 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(122, 82, 199, 0.8);
     z-index: 1000;
 }
 
@@ -317,96 +242,23 @@ footer {
     100% { transform: rotate(360deg); }
 }
 
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.menu-icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px 0;
-}
-
+/* 📌 반응형 디자인 */
 @media (max-width: 768px) {
     body {
         padding-top: 60px;
     }
 
-    header {
-        padding: 0.3rem 0;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin-bottom: 0.5rem;
-    }
-
     .nav-links {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #2c3e50;
-        padding: 0.5rem 0;
     }
 
     .nav-links.active {
         display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
+        flex-direction: column;
+        background: #7A52C7;
     }
 
     .nav-links li a {
-        display: block;
-        padding: 0.5rem 0;
-    }
-
-    .menu-icon {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-    }
-
-    .hero-images .main-image {
-        width: 100%;
-    }
-
-    #services, #pricing {
-        padding: 3rem 1rem; /* 모바일에서 상하 패딩 줄이고 좌우 패딩 유지 */
-    }
-
-    #services p, #pricing p {
-        padding: 0 0.5rem; /* 모바일에서 좌우 패딩 줄임 */
-    }
-}
-
-@media (min-width: 769px) {
-    .header-scroll {
-        padding: 0.3rem 0;
-    }
-
-    .header-scroll .logo img {
-        height: 35px;
-    }
-
-    .header-scroll .logo-text h1 {
-        font-size: 1.5rem;
-    }
-
-    .header-scroll .logo-text p {
-        font-size: 0.7rem;
+        padding: 0.5rem;
     }
 }
