@@ -50,10 +50,10 @@ nav {
 }
 
 .logo-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 700;
     margin: 0;
-    color: #2c3e50;
+    color: #F8F1DC; /* 크림색 적용 */
     letter-spacing: 2px;
 }
 
@@ -139,7 +139,7 @@ main {
 
 .hero-images {
     width: 100%;
-    display: flex;
+    display: none; /*flex에서 이미지 숨김으로 바꿈*/
     justify-content: center;
 }
 
