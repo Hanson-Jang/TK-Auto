@@ -192,11 +192,16 @@
         
             var formData = new FormData(event.target);
         
-            fetch("https://script.google.com/macros/s/AKfycbwuPRsCj8ZYwyuVd4uS9SjmwQYkS2Lo2r1JBKpC55ObKs9kl31kmYOSY8RBPexMG0_CIg/exec", {
+            fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
                 method: "POST",
-                body: formData
+                body: formData // 데이터를 FormData 형식으로 전송
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP 오류! 상태 코드: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 console.log("응답 데이터:", data);
                 document.getElementById('loading-overlay').classList.remove('active');
@@ -213,6 +218,7 @@
                 window.location.href = `thanks.html?status=error&error=${encodeURIComponent(error.message)}`;
             });
         });
+
 
 
 
