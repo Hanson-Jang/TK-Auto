@@ -274,6 +274,41 @@ main {
     background: #2980b9;
 }
 
+#partnership {
+    padding: 2rem 1rem;
+    background-color: #F8F1DC; /* 크림색 배경 */
+    text-align: center;
+}
+
+#partnership h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3D3D3D; /* 진한 텍스트 색상 */
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* 로고 사이 간격 */
+    padding: 1rem 0;
+}
+
+.partner-logos img {
+    width: 150px; /* 로고 너비 (필요에 따라 조정 가능) */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: grayscale(100%); /* 흑백 효과 */
+}
+
+.partner-logos img:hover {
+    transform: scale(1.1); /* 로고 확대 효과 */
+    filter: grayscale(0); /* 컬러로 변경 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 추가 */
+}
+
 footer {
     background: #2c3e50;
     color: white;
