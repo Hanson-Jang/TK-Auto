@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "values": "Werte",
+    "services": "Dienstleistungen",
+    "pricing": "Preise",
+    "booking": "Buchung",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "welcome": "Willkommen bei TK-Auto",
+    "discover": "Entdecken Sie die beste koreanische Autowerkstatt für Sie",
+    "description": "Wir sind ein professionelles und zuverlässiges koreanisches Jugendwartungsunternehmen in Frankfurt. <br> Qualifizierte koreanische Techniker, Meister und Ingenieure lösen jedes Problem schnell und effektiv. <br> Wir kümmern uns auch um die Außenreparaturen von Leasingfahrzeugen. Machen Sie sich keine Sorgen mehr alleine!",
+    "problems": {
+      "vehicle": {
+        "question": "Haben Sie Probleme mit Ihrem Auto?",
+        "answer": "\"Kommen Sie herein! Wir helfen Ihnen.\""
+      },
+      "communication": {
+        "question": "Unangenehm mit der Kommunikation?",
+        "answer": "\"Keine Sorge! Sie können Koreanisch sprechen.\""
+      },
+      "cost": {
+        "question": "Unsicher über die Reparaturkosten?",
+        "answer": "\"Immer transparent und ehrlich.\""
+      },
+      "insurance": {
+        "question": "Schwierigkeiten mit Versicherungsreparaturen?",
+        "answer": "\"Wir finden eine zufriedenstellende Lösung.\""
+      }
+    }
+  },
+  "values": {
+    "title": "Hochwertige Werte von TK-Auto",
+    "list": [
+      "\"Wir bieten genaue und hochwertige Wartungsservices.\" (Technische Fähigkeiten: Wir führen genaue Wartung basierend auf präziser Diagnose durch)",
+      "\"Wir bieten unseren Kunden transparente Arbeits- und Ersatzteilpreise.\" (Recht auf Information: Wir führen gewissenhafte Wartung basierend auf Prinzipien für unsere geschätzten Kunden durch)",
+      "\"Freundlicher Kundenservice ist unsere Grundphilosophie.\" (Kundenzufriedenheit: Wir sind immer mit einer kundenorientierten Denkweise ausgestattet)",
+      "\"Wir bieten koreanischen Sprachsupport.\" (Koreanische Techniker: Wir erklären die Probleme, Ursachen und Lösungen genau)"
+    ]
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Wir machen das Leben unserer Kunden auf Vertrauensbasis bequemer und glücklicher",
+    "items": {
+      "repair": {
+        "title": "Reparatur",
+        "description": "Wir können alle Probleme an Ihrem Fahrzeug mit den neuesten Reparaturmethoden und Technologien diagnostizieren und lösen."
+      },
+      "maintenance": {
+        "title": "Wartung",
+        "description": "Wir bieten verschiedene Wartungsdienste an, um Ihr Fahrzeug jederzeit in bestem Zustand zu halten."
+      },
+      "tuning": {
+        "title": "Tuning",
+        "description": "Durch unsere Tuning-Services können Sie die Leistung und das Aussehen Ihres Fahrzeugs optimieren."
+      },
+      "tires": {
+        "title": "Reifen",
+        "description": "Wir bieten auch Reifenwechsel und Reparaturservices an."
+      },
+      "tuv": {
+        "title": "TÜV",
+        "description": "Wir bieten regelmäßige Inspektionsdienste an."
+      },
+      "carwash": {
+        "title": "Premium Innen-/Außenreinigung",
+        "description": "Innen-/Außen-Dampfreinigungsservice 'Partner-Service' \"Wir machen das Leben unserer Kunden sauberer und glücklicher\" Wir machen das Leben unserer Kunden sauberer und glücklicher."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Preise",
+    "description": "Unsere Preise sind fair und transparent. Wir täuschen unsere Kunden nicht mit unzureichenden Worten oder groben Schätzungen.",
+    "items": {
+      "list": {
+        "title": "Preisliste",
+        "description": "(Listenaktualisierung für Mai 2025 geplant) Fester Technikersatz von 110 Euro, nur 10% Aufschlag auf Teile und ausgelagerte Servicekosten. Nach Diagnose/Beratung mit dem Kunden während der Schätzung erfolgen Reparaturen nach Vereinbarung. Fragen Sie jederzeit gerne nach."
+      },
+      "payment": {
+        "title": "Zahlungsoptionen",
+        "description": "Wir bieten verschiedene Zahlungsoptionen an, um den besten Service zu gewährleisten."
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen (FAQ)",
+    "questions": {
+      "repair": {
+        "question": "Welche Arten von Reparaturen bieten Sie an?",
+        "answer": "Wir können alle Arten von Autoreparaturen durchführen, von Kratzern und Dellen bis hin zu Motorproblemen und Getrieberetemperaturen."
+      },
+      "booking": {
+        "question": "Brauche ich einen Termin für die Wartung?",
+        "answer": "Bitte vereinbaren Sie zuerst einen Termin für die Diagnose. Nach Ihrem Besuch koordinieren wir die Wartungs-/Reparaturzeit."
+      },
+      "cost": {
+        "question": "Wie viel kostet eine Reparatur?",
+        "answer": "Die Reparaturkosten variieren je nach Art des Schadens, Fahrzeugmodell und Hersteller. Wir bieten transparente Preispolitik durch Offenlegung unserer Sätze. Das Aufblähen von Teilemargen ist durch die Firmenpolitik streng verboten. Bitte kontaktieren Sie uns für einen Kostenvoranschlag."
+      }
+    }
+  },
+  "contact": {
+    "title": "Vertrauen Sie uns",
+    "description": "Wir werden unser Bestes geben, um Ihr Fahrzeug in bestem Zustand zu halten.",
+    "info": {
+      "address": "Adresse",
+      "directions": "Anfahrt",
+      "phone": "Telefon",
+      "email": "E-Mail"
+    },
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "submit": "Senden"
+    }
+  },
+  "partnership": {
+    "title": "Partnerschaft"
+  },
+  "footer": {
+    "copyright": "© 2024 TK-Auto. Alle Rechte vorbehalten."
+  },
+  "thanks": {
+    "title": "Vielen Dank!",
+    "message": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
+    "back": "Zurück zur Startseite"
+  }
+}

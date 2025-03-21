@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "values": "Values",
+    "services": "Services",
+    "pricing": "Pricing",
+    "booking": "Booking",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to TK-Auto",
+    "discover": "Discover the Best Korean Auto Repair Shop for You",
+    "description": "We are a professional and reliable Korean youth maintenance business located in Frankfurt. <br> Skilled Korean technicians, masters, and engineers quickly and effectively solve any problem. <br> We also handle the exterior repairs of leased vehicles cleanly. Don't worry alone anymore!",
+    "problems": {
+      "vehicle": {
+        "question": "Having car problems?",
+        "answer": "\"Come on in! We'll help you.\""
+      },
+      "communication": {
+        "question": "Uncomfortable with communication?",
+        "answer": "\"Don't worry! Please speak in Korean.\""
+      },
+      "cost": {
+        "question": "Unsure about repair costs?",
+        "answer": "\"Always transparent and honest.\""
+      },
+      "insurance": {
+        "question": "Having difficulty with insurance repairs?",
+        "answer": "\"We'll find a satisfactory solution.\""
+      }
+    }
+  },
+  "values": {
+    "title": "High-Quality Values Provided by TK-Auto",
+    "list": [
+      "\"We provide accurate and high-quality maintenance services.\" (Technical Skills: We will provide accurate maintenance based on precise diagnosis)",
+      "\"We provide transparent labor and parts prices to customers.\" (Right to Know: We perform conscientious maintenance based on principles for our valued customers)",
+      "\"Friendly customer service is our basic philosophy.\" (Customer Satisfaction: We are always equipped with a customer-oriented mindset)",
+      "\"We provide Korean language support service.\" (Korean Technicians: We will explain the problems, causes, and solutions accurately)"
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We make our customers' lives more convenient and happier based on trust",
+    "items": {
+      "repair": {
+        "title": "Repair",
+        "description": "We can diagnose and solve all problems that occur in your vehicle using the latest repair methods and technology."
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "We provide various maintenance services to keep your vehicle in the best condition at all times."
+      },
+      "tuning": {
+        "title": "Tuning",
+        "description": "Through our tuning services, you can optimize your vehicle's performance and appearance."
+      },
+      "tires": {
+        "title": "Tires",
+        "description": "We also provide tire replacement and repair services."
+      },
+      "tuv": {
+        "title": "TÜV",
+        "description": "We provide periodic inspection services."
+      },
+      "carwash": {
+        "title": "Premium Interior/Exterior Car Wash",
+        "description": "Interior/exterior steam car wash service 'Partner-linked service' \"We make our customer's life cleaner and happier\" We make our customers' lives cleaner and happier."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Our prices are fair and transparent. We do not deceive customers with inadequate words or rough estimates.",
+    "items": {
+      "list": {
+        "title": "Price List",
+        "description": "(List update scheduled for May 2025) Fixed technician rate of 110 euros, only 10% added to parts and outsourced service costs. After diagnosis/consultation with the customer during estimation, repairs proceed upon agreement. Feel free to inquire anytime."
+      },
+      "payment": {
+        "title": "Payment Options",
+        "description": "We provide various payment options to provide the best service."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "questions": {
+      "repair": {
+        "question": "What types of repairs do you provide?",
+        "answer": "We can handle all types of car repairs, from scratches and dents to engine problems and transmission repairs."
+      },
+      "booking": {
+        "question": "Do I need an appointment for maintenance?",
+        "answer": "Please make an appointment first for diagnosis. After your visit, we will coordinate the maintenance/repair time."
+      },
+      "cost": {
+        "question": "How much does repair cost?",
+        "answer": "Repair costs vary depending on the type of damage, vehicle model, and manufacturer. We provide transparent pricing policies by disclosing our rates. Inflating parts margins is strictly prohibited by company policy. Please contact us for an estimate."
+      }
+    }
+  },
+  "contact": {
+    "title": "Trust Us",
+    "description": "We will do our best to keep your vehicle in the best condition.",
+    "info": {
+      "address": "Address",
+      "directions": "Directions",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "partnership": {
+    "title": "Partnership"
+  },
+  "footer": {
+    "copyright": "© 2024 TK-Auto. All rights reserved."
+  },
+  "thanks": {
+    "title": "Thank you!",
+    "message": "Your message has been successfully sent. We will contact you soon.",
+    "back": "Return to Homepage"
+  }
+}
