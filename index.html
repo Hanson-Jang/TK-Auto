@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TK-Auto 한인 정비소 in Frankfurt </title>
+    <meta name="description" content="프랑크푸르트 최고의 한인 자동차 정비소 TK-Auto. 숙련된 한국인 기술자가 제공하는 전문적이고 신뢰할 수 있는 자동차 수리, 정비, 튜닝 서비스">
+    <meta name="keywords" content="프랑크푸르트 한인 정비소, 독일 자동차 정비, TK-Auto, 한국인 정비사, 자동차 수리, 자동차 정비, 튜닝, TÜV, 타이어 교체">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="TK-Auto 한인 정비소 in Frankfurt">
+    <meta property="og:description" content="프랑크푸르트 최고의 한인 자동차 정비소 TK-Auto. 숙련된 한국인 기술자가 제공하는 전문적이고 신뢰할 수 있는 자동차 수리, 정비, 튜닝 서비스">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <title>TK-Auto 한인 정비소 in Frankfurt | 전문 자동차 정비 서비스</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -13,18 +20,27 @@
             <div class="logo">
                 <img src="img/TK-Auto_MainLogo.png" alt="TK-AUTO Logo">
                 <div class="logo-text">
-                    <h1>TK-AUTO</h1>
-                    <p>Best Maintenance Service</p>
+                    <h1 data-i18n="logo.title">TK-AUTO</h1>
+                    <p data-i18n="logo.subtitle">Best Maintenance Service</p>
                 </div>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">홈</a></li>
-                <li><a href="#values">가치</a></li>
-                <li><a href="#services">서비스</a></li>
-                <li><a href="#pricing">가격 책정</a></li>
-                <li><a href="#booking">예약</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">연락처</a></li>
+                <li><a href="#home" data-i18n="nav.home">홈</a></li>
+                <li><a href="#values" data-i18n="nav.values">가치</a></li>
+                <li><a href="#services" data-i18n="nav.services">서비스</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">가격 책정</a></li>
+                <li><a href="#booking" data-i18n="nav.booking">예약</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">연락처</a></li>
+                <li class="language-selector">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="de">Deutsch</option>
+                        <option value="ja">日本語</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,13 +49,13 @@
         <section id="home" class="hero">
             <div class="hero-content container">
                 <div class="hero-text">
-                    <h1>Welcome to TK-Auto</h1>
-                    <h2>Discover the Best Korean Auto Repair Shop for You</h2>
-                    <p>저희는 프랑크푸르트에 위치한 전문적이고 신뢰할 수 있는 한인 청년 정비 사업소입니다. <br> 숙련된 한국인 기술자, 마이스터, 엔지니어들이 어떤 문제라도 빠르고 효과적으로 해결합니다.<br> 리스 차량의 외관 수리 또한 말끔하게 처리해 드립니다. 더 이상 혼자서 고민하지 마세요! </p>
-                    <p class="highlight">차량에 문제가 생기셨나요?<br> <span class="blue-text">"어서 오세요! 저희가 도와드릴게요."</span></p>
-                    <p class="highlight">소통이 불편하신가요?<br> <span class="blue-text">"걱정 마세요! 한국어로 말씀 주세요."</span></p>
-                    <p class="highlight">수리 비용이 못 미더우신가요?<br> <span class="blue-text">"언제나 투명하고 정직합니다."</span></p>
-                    <p class="highlight">보험 수리 진행에 어려움이 있나요?<br> <span class="blue-text">"만족스러운 방법을 찾아 드립니다."</span></p>
+                    <h1 data-i18n="hero.welcome">Welcome to TK-Auto</h1>
+                    <h2 data-i18n="hero.discover">Discover the Best Korean Auto Repair Shop for You</h2>
+                    <p data-i18n="hero.description" data-i18n-html>저희는 프랑크푸르트에 위치한 전문적이고 신뢰할 수 있는 한인 청년 정비 사업소입니다. <br> 숙련된 한국인 기술자, 마이스터, 엔지니어들이 어떤 문제라도 빠르고 효과적으로 해결합니다.<br> 리스 차량의 외관 수리 또한 말끔하게 처리해 드립니다. 더 이상 혼자서 고민하지 마세요! </p>
+                    <p class="highlight" data-i18n="hero.problems.vehicle.question">차량에 문제가 생기셨나요?<br> <span class="blue-text" data-i18n="hero.problems.vehicle.answer">"어서 오세요! 저희가 도와드릴게요."</span></p>
+                    <p class="highlight" data-i18n="hero.problems.communication.question">소통이 불편하신가요?<br> <span class="blue-text" data-i18n="hero.problems.communication.answer">"걱정 마세요! 한국어로 말씀 주세요."</span></p>
+                    <p class="highlight" data-i18n="hero.problems.cost.question">수리 비용이 못 미더우신가요?<br> <span class="blue-text" data-i18n="hero.problems.cost.answer">"언제나 투명하고 정직합니다."</span></p>
+                    <p class="highlight" data-i18n="hero.problems.insurance.question">보험 수리 진행에 어려움이 있나요?<br> <span class="blue-text" data-i18n="hero.problems.insurance.answer">"만족스러운 방법을 찾아 드립니다."</span></p>
                 </div>
                 <div class="hero-images">
                     <img src="img/TK-Auto Img_AI_7_cropped.jpg" alt="TK-Auto Img_AI_7" class="main-image">
@@ -48,18 +64,18 @@
         </section>
 
         <section id="booking" class="container">
-            <h2>예약</h2>
+            <h2 data-i18n="nav.booking">예약</h2>
             <div class="calendly-inline-widget" data-url="https://calendly.com/jerhyun/1hour" style="min-width:320px;height:630px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </section>
 
         <section id="values" class="container">
-            <h2>TK-Auto 가 제공하는 고품격 가치</h2>
-            <ul>
-                <li>"우리는 정확하고 고품질의 정비 서비스를 제공합니다."<br> (기술력: 정밀 진단에 기반한 정확한 정비를 하겠습니다)</li>
-                <li>"투명한 인건비와 부품 가격을 고객에게 실현합니다."<br> (알 권리: 소중한 고객에게 원칙을 기반으로, 양심적인 정비를 합니다)</li>
-                <li>"친절한 고객 서비스는 우리의 기본 철학입니다."<br> (고객 감동: 우리는 항상 고객 마인드로 무장하고 있습니다)</li>
-                <li>"한국어 응대 서비스를 제공합니다."<br> (한인 기술자: 문제, 원인 및 대책을 정확히 설명 드리겠습니다)</li>
+            <h2 data-i18n="values.title">TK-Auto 가 제공하는 고품격 가치</h2>
+            <ul data-i18n-list="values.list">
+                <li data-i18n="values.list.0">"우리는 정확하고 고품질의 정비 서비스를 제공합니다."<br> (기술력: 정밀 진단에 기반한 정확한 정비를 하겠습니다)</li>
+                <li data-i18n="values.list.1">"투명한 인건비와 부품 가격을 고객에게 실현합니다."<br> (알 권리: 소중한 고객에게 원칙을 기반으로, 양심적인 정비를 합니다)</li>
+                <li data-i18n="values.list.2">"친절한 고객 서비스는 우리의 기본 철학입니다."<br> (고객 감동: 우리는 항상 고객 마인드로 무장하고 있습니다)</li>
+                <li data-i18n="values.list.3">"한국어 응대 서비스를 제공합니다."<br> (한인 기술자: 문제, 원인 및 대책을 정확히 설명 드리겠습니다)</li>
             </ul>
                 <div class="hero-images">
                 <img src="img/TK-Auto Img_AI_6.png" alt="TK-Auto Img_AI_6" class="main-image"> 
@@ -68,57 +84,57 @@
         </section>
 
         <section id="services" class="container">
-            <h2>우리의 서비스</h2>
-            <p>We make our customers' lives more convenient and happier based on trust</p>
-            <p>우리는 신뢰를 기반으로, 고객의 삶을 보다 편안하고 더 행복하게 만듭니다</p>
+            <h2 data-i18n="services.title">우리의 서비스</h2>
+            <p data-i18n="services.subtitle">We make our customers' lives more convenient and happier based on trust</p>
+            <p data-i18n="services.subtitle">우리는 신뢰를 기반으로, 고객의 삶을 보다 편안하고 더 행복하게 만듭니다</p>
             <div class="service-grid">
                 <div class="service-item">
                     <img src="img/P3_1.jpg" alt="수리">
-                    <h3>수리</h3>
-                    <p>우리는 최신 수리 방법과 <br> 기술을 활용하여 <br> 귀하의 차량에 발생하는 <br> 모든 문제를 진단하고 <br> 해결할 수 있습니다.</p>
+                    <h3 data-i18n="services.items.repair.title">수리</h3>
+                    <p data-i18n="services.items.repair.description">우리는 최신 수리 방법과 <br> 기술을 활용하여 <br> 귀하의 차량에 발생하는 <br> 모든 문제를 진단하고 <br> 해결할 수 있습니다.</p>
                 </div>
                 <div class="service-item">
                     <img src="img/P3_2.jpg" alt="정비">
-                    <h3>정비</h3>
-                    <p>차량이 항상 최상의 상태를 <br> 유지하도록 다양한 정비 <br> 서비스를 제공합니다.</p>
+                    <h3 data-i18n="services.items.maintenance.title">정비</h3>
+                    <p data-i18n="services.items.maintenance.description">차량이 항상 최상의 상태를 <br> 유지하도록 다양한 정비 <br> 서비스를 제공합니다.</p>
                 </div>
                 <div class="service-item">
                     <img src="img/p3_3.jpg" alt="튜닝">
-                    <h3>튜닝</h3>
-                    <p>튜닝 서비스를 통해 <br> 차량의 성능과 외관을 <br> 최적화할 수 있습니다.</p>
+                    <h3 data-i18n="services.items.tuning.title">튜닝</h3>
+                    <p data-i18n="services.items.tuning.description">튜닝 서비스를 통해 <br> 차량의 성능과 외관을 <br> 최적화할 수 있습니다.</p>
                 </div>
                 <div class="service-item">
                     <img src="img/p3_4.jpg" alt="타이어">
-                    <h3>타이어</h3>
-                    <p>타이어 교체 및 수리 <br> 서비스도 제공합니다.</p>
+                    <h3 data-i18n="services.items.tires.title">타이어</h3>
+                    <p data-i18n="services.items.tires.description">타이어 교체 및 수리 <br> 서비스도 제공합니다.</p>
                 </div>
                  <div class="service-item">
-                    <img src="img/p3_6.jpg" alt="T">
-                    <h3>TÜV</h3>
-                    <p>정기검사 서비스를 <br> 제공합니다.</p>
+                    <img src="img/p3_6.jpg" alt="TÜV">
+                    <h3 data-i18n="services.items.tuv.title">TÜV</h3>
+                    <p data-i18n="services.items.tuv.description">정기검사 서비스를 제공합니다.</p>
                 </div>
 
                 <div class="service-item">
-                    <img src="img/p3_5.jpg" alt="실내/외 프리미엄 세차">
-                    <h3>실내/외 프리미엄 세차</h3>
-                    <p>내/외부 스팀 세차 서비스 <br> '협력사 연계 서비스' <br>"We make our customer's <br> life cleaner and happier"<br>우리는 고객의 삶을 보다 <br> 깨끗하고 행복하게 만듭니다.</p>
+                    <img src="img/p3_5.jpg" alt="Premium Car Wash">
+                    <h3 data-i18n="services.items.carwash.title">실내/외 프리미엄 세차</h3>
+                    <p data-i18n="services.items.carwash.description">내/외부 스팀 세차 서비스 '협력사 연계 서비스' "We make our customer's life cleaner and happier" 우리는 고객의 삶을 보다 깨끗하고 행복하게 만듭니다.</p>
                 </div>
             </div>
         </section>
 
         <section id="pricing" class="container">
-            <h2>가격 책정</h2>
-            <p>저희의 가격은 공정하고 투명합니다. <br>어줍잖은 말이나 간이 견적으로 고객을 기만하지 않습니다.</p>
+            <h2 data-i18n="pricing.title">가격 책정</h2>
+            <p data-i18n="pricing.description">저희의 가격은 공정하고 투명합니다. 어줍잖은 말이나 간이 견적으로 고객을 기만하지 않습니다.</p>
             <div class="pricing-grid">
                 <div class="pricing-item">
                     <img src="img/p4_1.jpg" alt="가격 목록">
-                    <h3>가격 목록</h3>
-                    <p>(2025년 5월 리스트 업데이트 예정) 기술자 임률 110유로 고정, 부품가 및 외주 서비스 비용에 10%만 추가 청구합니다. 견적 시 고객께 진단/상담을 완료하고, 합의 후 수리가 진행됩니다. 언제든 문의주세요. </p>
+                    <h3 data-i18n="pricing.items.list.title">가격 목록</h3>
+                    <p data-i18n="pricing.items.list.description">(2025년 5월 리스트 업데이트 예정) 기술자 임률 110유로 고정, 부품가 및 외주 서비스 비용에 10%만 추가 청구합니다. 견적 시 고객께 진단/상담을 완료하고, 합의 후 수리가 진행됩니다. 언제든 문의주세요. </p>
                 </div>
                 <div class="pricing-item">
                     <img src="img/p4_2.jpg" alt="결제 옵션">
-                    <h3>결제 옵션</h3>
-                    <p>최고의 서비스를 제공하기 위해 다양한 결제 옵션을 제공합니다.</p>
+                    <h3 data-i18n="pricing.items.payment.title">결제 옵션</h3>
+                    <p data-i18n="pricing.items.payment.description">최고의 서비스를 제공하기 위해 다양한 결제 옵션을 제공합니다.</p>
                 </div>
             </div>
         </section>
@@ -126,19 +142,19 @@
 
         
         <section id="faq" class="container">
-            <h2>자주 묻는 질문 (FAQ)</h2>
+            <h2 data-i18n="faq.title">자주 묻는 질문 (FAQ)</h2>
             <ol>
                 <li>
-                    <h3>어떤 종류의 수리를 제공하시나요?</h3>
-                    <p>스크래치와 찌그러진 부분부터 엔진 문제와 변속기 수리까지 모든 종류의 자동차 수리를 진행할 수 있습니다.</p>
+                    <h3 data-i18n="faq.questions.repair.question">어떤 종류의 수리를 제공하시나요?</h3>
+                    <p data-i18n="faq.questions.repair.answer">스크래치와 찌그러진 부분부터 엔진 문제와 변속기 수리까지 모든 종류의 자동차 수리를 진행할 수 있습니다.</p>
                 </li>
                 <li>
-                    <h3>정비를 위해 예약이 필요한가요?</h3>
-                    <p>먼저 진단을 위한 예약 시간을 잡아주세요. 방문하신 이후에 정비/수리 시간을 조율합니다.</p>
+                    <h3 data-i18n="faq.questions.booking.question">정비를 위해 예약이 필요한가요?</h3>
+                    <p data-i18n="faq.questions.booking.answer">먼저 진단을 위한 예약 시간을 잡아주세요. 방문하신 이후에 정비/수리 시간을 조율합니다.</p>
                 </li>
                 <li>
-                    <h3>수리 비용은 얼마인가요?</h3>
-                    <p>수리 비용은 손상 종류와 차량 모델 및 제조사에 따라 다릅니다. 저희는 임률을 공개하여 투명한 가격정책을 제공하고 있습니다. 부품 마진을 부풀리는 행위는 사규로 엄격히 금지됩니다. 견적을 위해 저희에게 문의해 주세요.</p>
+                    <h3 data-i18n="faq.questions.cost.question">수리 비용은 얼마인가요?</h3>
+                    <p data-i18n="faq.questions.cost.answer">수리 비용은 손상 종류와 차량 모델 및 제조사에 따라 다릅니다. 저희는 임률을 공개하여 투명한 가격정책을 제공하고 있습니다. 부품 마진을 부풀리는 행위는 사규로 엄격히 금지됩니다. 견적을 위해 저희에게 문의해 주세요.</p>
                 </li>
                 <div class="hero-images">
                 <img src="img/TK-Auto Img_AI_8.png" alt="TK-Auto Img_AI_8" class="main-image"> 
@@ -148,16 +164,16 @@
         </section>
 
         <section id="contact" class="container">
-            <h2>믿고 맡겨주세요</h2>
-            <p>저희는 차량을 최상의 상태로 유지할 수 있도록 최선을 다하겠습니다.</p>
+            <h2 data-i18n="contact.title">믿고 맡겨주세요</h2>
+            <p data-i18n="contact.description">저희는 차량을 최상의 상태로 유지할 수 있도록 최선을 다하겠습니다.</p>
             <div class="contact-info">
                 <table>
                     <tr>
-                        <th>주소:</th>
+                        <th data-i18n="contact.info.address">주소:</th>
                         <td>Westring 1A, 65824 Schwalbach am Taunus</td>
                     </tr>
                     <tr>
-                        <th>오시는 길:</th>
+                        <th data-i18n="contact.info.directions">오시는 길:</th>
                         <td>
                             <a href="https://maps.app.goo.gl/HhJMSsSzceff4i3h9" target="_blank">구글맵 링크</a>
                             <br>
@@ -169,22 +185,22 @@
                         <td>0174 923 7914, 0176 4055 6735</td>
                     </tr>
                     <tr>
-                        <th>E-Mail:</th>
+                        <th data-i18n="contact.info.email">E-Mail:</th>
                         <td> t.w.kim.ventura@gmail.com, jerhyun@gmail.com </td>
                     </tr>
                 </table>
             </div>
             <form id="contact-form" action="https://script.google.com/macros/s/AKfycbyX3387JNe1Ng79LcJvBRr8N5KRU5OGdRtcV5ZOexjzKfIxKv4gVT6miTjAv29RzI_f/exec" method="POST">
-                <input type="text" name="name" placeholder="이름" required>
-                <input type="email" name="email" placeholder="이메일" required>
-                <textarea name="message" placeholder="메시지" required></textarea>
-                <button type="submit">보내기</button>
+                <input type="text" name="name" placeholder="이름" data-i18n="contact.form.name" required>
+                <input type="email" name="email" placeholder="이메일" data-i18n="contact.form.email" required>
+                <textarea name="message" placeholder="메시지" data-i18n="contact.form.message" required></textarea>
+                <button type="submit" data-i18n="contact.form.submit">보내기</button>
             </form>
         </section>
 
         <section id="partnership" class="container">
             
-    <h2>Partnership(협력사)</h2>
+    <h2 data-i18n="partnership.title">Partnership(협력사)</h2>
     <div class="partner-logos">
         <a href="https://maps.app.goo.gl/wnFojx6TK1Enu4tq9" target="_blank">
             <img src="img/Logo_Fathers.jpg" alt="Partner 1 Logo">
@@ -203,7 +219,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 TK-Auto. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2024 TK-Auto. All rights reserved.</p>
         </div>
     </footer>
 
@@ -250,6 +266,108 @@
 
 
 
+    </script>
+    <script>
+    let currentLanguage = localStorage.getItem('language') || 'ko';
+    let translations = {};
+
+    document.addEventListener('DOMContentLoaded', async function() {
+        const languageSelect = document.getElementById('languageSelect');
+        if (languageSelect) {
+            languageSelect.value = currentLanguage;
+            await loadTranslations(currentLanguage);
+            
+            // Add event listener for language change
+            languageSelect.addEventListener('change', async function(event) {
+                await changeLanguage(event.target.value);
+            });
+        }
+    });
+
+    async function loadTranslations(lang) {
+        try {
+            console.log(`Loading translations for language: ${lang}`);
+            const response = await fetch(`translations/${lang}.json`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            translations = await response.json();
+            console.log('Translations loaded successfully:', translations);
+            updateContent();
+        } catch (error) {
+            console.error(`Error loading translations for ${lang}:`, error);
+        }
+    }
+
+    function updateContent() {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const keys = element.getAttribute('data-i18n').split('.');
+            let value = translations;
+            
+            for (const key of keys) {
+                if (value && typeof value === 'object') {
+                    value = value[key];
+                } else {
+                    console.warn(`Translation not found for key: ${keys.join('.')}`);
+                    return;
+                }
+            }
+
+            if (value) {
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.placeholder = value;
+                } else if (element.children.length > 0 && !element.hasAttribute('data-i18n-html')) {
+                    // If element has children and is not marked for HTML content, only update the text nodes
+                    const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+                    let textNode = walker.nextNode();
+                    if (textNode) {
+                        textNode.textContent = value;
+                    }
+                } else {
+                    // For elements with HTML content or no children, set innerHTML
+                    element.innerHTML = value;
+                }
+            }
+        });
+
+        // Handle lists with multiple items
+        document.querySelectorAll('[data-i18n-list]').forEach(element => {
+            const listKey = element.getAttribute('data-i18n-list');
+            let listValues = translations;
+            
+            // Traverse to get the list
+            for (const key of listKey.split('.')) {
+                if (listValues && typeof listValues === 'object') {
+                    listValues = listValues[key];
+                } else {
+                    return;
+                }
+            }
+
+            if (Array.isArray(listValues)) {
+                // Clear existing items
+                element.innerHTML = '';
+                // Create new items
+                listValues.forEach(value => {
+                    const li = document.createElement('li');
+                    li.textContent = value;
+                    element.appendChild(li);
+                });
+            }
+        });
+    }
+
+    async function changeLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('language', lang);
+        document.documentElement.lang = lang;
+        await loadTranslations(lang);
+        updateContent();
+    }
+
+    // Initialize with saved language preference
+    document.getElementById('languageSelect').value = currentLanguage;
+    loadTranslations(currentLanguage);
     </script>
 </body>
 </html>
