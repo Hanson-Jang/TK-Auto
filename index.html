@@ -24,6 +24,11 @@
                     <p data-i18n="logo.subtitle">Best Maintenance Service</p>
                 </div>
             </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home" data-i18n="nav.home">홈</a></li>
                 <li><a href="#values" data-i18n="nav.values">가치</a></li>
@@ -156,6 +161,11 @@
                     <h3 data-i18n="faq.questions.cost.question">수리 비용은 얼마인가요?</h3>
                     <p data-i18n="faq.questions.cost.answer">수리 비용은 손상 종류와 차량 모델 및 제조사에 따라 다릅니다. 저희는 임률을 공개하여 투명한 가격정책을 제공하고 있습니다. 부품 마진을 부풀리는 행위는 사규로 엄격히 금지됩니다. 견적을 위해 저희에게 문의해 주세요.</p>
                 </li>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="hero-images">
                 <img src="img/TK-Auto Img_AI_8.png" alt="TK-Auto Img_AI_8" class="main-image"> 
                 </div>
@@ -369,5 +379,14 @@
     document.getElementById('languageSelect').value = currentLanguage;
     loadTranslations(currentLanguage);
     </script>
+</body>
+</html>
+
+<script>
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+</script>
 </body>
 </html>

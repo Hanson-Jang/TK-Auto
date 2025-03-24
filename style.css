@@ -68,394 +68,136 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 2rem;
     padding: 0;
     margin: 0;
 }
 
-.nav-links li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease;
-    padding: 0.3rem 0.5rem;
-    border-radius: 4px;
-}
-
-.nav-links li a:hover {
-    color: #3498db;
-    transform: translateY(-2px);
-}
-
-main {
-    padding: 4rem 0;
-}
-
-.hero {
-    position: relative;
-    padding: 6rem 0;
-    background: #f8f1DC;
-    color: #333;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-text {
-    max-width: 800px;
-    margin-bottom: 2rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin: 1rem 0;
-    color: #2c3e50;
-}
-
-.hero h2 {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
-    color: #6A5ACD;
-}
-
-.hero p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
-}
-
-.hero p.highlight {
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-.hero .blue-text {
-    color: #6A5ACD;
-}
-
-.hero-images {
-    width: 100%;
-    display: none; /*flex에서 이미지 숨김으로 바꿈*/
-    justify-content: center;
-}
-
-.hero-images .main-image {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-#values, #services, #pricing, #faq, #contact {
-    padding: 4rem 1rem; /* 좌우 패딩 추가 */
-}
-
-#values h2, #services h2, #pricing h2, #faq h2, #contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
-}
-
-#values ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-#values ul li {
-    background: white; /* 배경 원래대로 (흰색) */
-    color: #333; /* 텍스트 색상 원래대로 */
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-#values ul li:hover {
-    transform: translateY(-5px);
-}
-
-.service-grid, .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
-}
-
-.service-item, .pricing-item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.service-item:hover, .pricing-item:hover {
-    transform: translateY(-5px);
-}
-
-.service-item img, .pricing-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-#services p, #pricing p {
-    max-width: 800px; /* 최대 너비 설정 */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem; /* 추가 좌우 패딩 */
-}
-
-#contact {
-    background: #F8F1DC;
-    text-align: center;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.contact-info table {
-    border-collapse: separate;
-    border-spacing: 0 10px;
-}
-
-.contact-info th {
-    text-align: right;
-    padding-right: 15px;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.contact-info td {
-    text-align: left;
-}
-
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contact-form button {
-    background: #3498db;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-}
-
-#contact-form button:hover {
-    background: #2980b9;
-}
-
-#partnership {
-    padding: 2rem 1rem;
-    background-color: #F8F1DC; /* 크림색 배경 */
-    text-align: center;
-}
-
-#partnership h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #3D3D3D; /* 진한 텍스트 색상 */
-}
-
-.partner-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem; /* 로고 사이 간격 */
-    padding: 1rem 0;
-}
-
-.partner-logos img {
-    width: 150px; /* 로고 너비 (필요에 따라 조정 가능) */
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    filter: grayscale(100%); /* 흑백 효과 */
-}
-
-.partner-logos img:hover {
-    transform: scale(1.1); /* 로고 확대 효과 */
-    filter: grayscale(0); /* 컬러로 변경 */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 추가 */
-}
-
-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 1000;
-}
-
-.overlay.active {
-    display: block;
-}
-
-.spinner {
-    display: none;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border-left-color: #09f;
-    animation: spin 1s ease infinite;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.overlay.active .spinner {
-    display: block;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.menu-icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px 0;
-}
-
 @media (max-width: 768px) {
-    body {
-        padding-top: 60px;
-    }
-
-    header {
-        padding: 0.3rem 0;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin-bottom: 0.5rem;
-    }
-
     .nav-links {
         display: none;
-        flex-direction: column;
-        width: 100%;
         position: absolute;
         top: 100%;
         left: 0;
-        background: #2c3e50;
-        padding: 0.5rem 0;
+        background: #3D3D3D;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+        width: 100%;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .nav-links li {
         text-align: center;
+        width: 100%;
     }
 
     .nav-links li a {
         display: block;
-        padding: 0.5rem 0;
+        padding: 0.8rem 0;
+        color: #F8F1DC;
+        font-size: 1.1rem;
     }
 
     .language-selector {
         display: block !important;
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 0;
     }
 
     .language-selector select {
-        padding: 5px;
+        width: 80%;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 8px;
         border-radius: 4px;
-        border: 1px solid #ddd;
-        background-color: white;
-        color: #2c3e50;
+        border: 1px solid #F8F1DC;
+        background-color: #3D3D3D;
+        color: #F8F1DC;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+.nav-links li {
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 0.8rem 0;
+    color: #F8F1DC;
+    font-size: 1.1rem;
+}
+
+.language-selector {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+    background-color: #3D3D3D;
+}
+
+.language-selector select {
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #F8F1DC;
+    background-color: #3D3D3D;
+    color: #F8F1DC;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: relative;
+        right: 0;
+        top: 0;
+        z-index: 1001;
         cursor: pointer;
     }
 
-    @media (max-width: 768px) {
-        .language-selector {
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
-            background-color: #2c3e50;
-        }
-
-        .language-selector select {
-            width: 80%;
-            max-width: 200px;
-            margin: 0 auto;
-        }
-    }
-
-    .menu-icon {
+    .language-selector {
         display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
+        margin: 0.5rem 0;
     }
 
-    .hero-images .main-image {
-        width: 100%;
+    .language-selector select {
+        width: 80%;
+        max-width: 200px;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #F8F1DC;
+        background-color: #3D3D3D;
+        color: #F8F1DC;
+        font-size: 1rem;
+        cursor: pointer;
     }
-
-    #services, #pricing {
-        padding: 3rem 1rem; /* 모바일에서 상하 패딩 줄이고 좌우 패딩 유지 */
-    }
-
-    #services p, #pricing p {
-        padding: 0 0.5rem; /* 모바일에서 좌우 패딩 줄임 */
-    }
+}
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #F8F1DC;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
 }
 
 @media (min-width: 769px) {
