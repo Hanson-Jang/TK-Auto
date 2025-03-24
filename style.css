@@ -380,7 +380,7 @@ footer {
         top: 60px;
         left: 0;
         background: #3D3D3D;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         max-height: calc(100vh - 60px);
         overflow-y: auto;
         z-index: 1000;
@@ -392,19 +392,19 @@ footer {
 
     .nav-links li {
         text-align: center;
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
     }
 
     .nav-links li a {
         display: block;
-        padding: 0.5rem 0;
+        padding: 0.3rem 0;
         color: #F8F1DC;
     }
 
     .language-selector {
         display: block !important;
-        padding: 1rem 0;
-        margin-top: 0.5rem;
+        padding: 0.5rem 0;
+        margin-top: 0.3rem;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
