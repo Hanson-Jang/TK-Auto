@@ -215,6 +215,19 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 0 1rem; /* 추가 좌우 패딩 */
+    text-align: center;
+}
+
+#pricing h3, #pricing .price-link {
+    font-size: 1.8rem; /* 가격표 제목 폰트 크기 2배로 증가 */
+    margin: 1.5rem 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#pricing .price-link:hover {
+    transform: scale(1.05);
+    color: #3498db;
 }
 
 #contact {

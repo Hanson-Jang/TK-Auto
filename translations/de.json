@@ -75,8 +75,8 @@
     "description": "Unsere Preise sind fair und transparent. Wir täuschen unsere Kunden nicht mit unzureichenden Worten oder groben Schätzungen.",
     "items": {
       "list": {
-        "title": "Preisliste",
-        "description": "(Listenaktualisierung für Mai 2025 geplant) Fester Technikersatz von 110 Euro, nur 10% Aufschlag auf Teile und ausgelagerte Servicekosten. Nach Diagnose/Beratung mit dem Kunden während der Schätzung erfolgen Reparaturen nach Vereinbarung. Fragen Sie jederzeit gerne nach."
+        "title": "TK-Auto Standard-Serviceleistungen und Preisliste",
+        "description": "Fester Technikersatz von 110 Euro, nur 10% Aufschlag auf Teile und ausgelagerte Servicekosten. Nach Diagnose/Beratung mit dem Kunden während der Schätzung erfolgen Reparaturen nach Vereinbarung. Fragen Sie jederzeit gerne nach."
       },
       "payment": {
         "title": "Zahlungsoptionen",
