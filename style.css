@@ -137,6 +137,41 @@ main {
     color: #6A5ACD;
 }
 
+/* Add styles for the guide section */
+/* Update font style for guide title */
+.guide-title {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #3D348B;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+/* Adjust image size to half */
+.guide-image {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero .guide-link a {
+    display: inline-block;
+    color: #6A5ACD;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .guide-link a:hover {
+    color: #3498db;
+    transform: translateY(-2px);
+}
+
 .hero-images {
     width: 100%;
     display: none; /*flex에서 이미지 숨김으로 바꿈*/
@@ -451,3 +486,11 @@ footer {
     }
 }
 
+
+#guide-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
